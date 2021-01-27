@@ -18,3 +18,26 @@ body {
    */
   background-image: url('./images/bg-pattern.png');
 }
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+

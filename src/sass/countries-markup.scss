@@ -1,0 +1,41 @@
+.country-container {
+   
+    margin-top: 20px;
+   
+}
+
+.country-container__item {
+    list-style: none;
+}
+
+.country__title {
+    margin-bottom: 15px;
+}
+
+.country__img {
+    width: 360px;
+}
+
+.flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexbox__item {
+    margin-right: 30px;
+    text-align: start;
+}
+
+.country__subtitle:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.country__subtitle-bold {
+    font-weight: bold;
+    
+}
+
+.country__language {
+    padding-left: 25px;
+}
