@@ -17,14 +17,13 @@ function fetchCountries(searchQuery) {
             notify()
             return;
         }
-        if(countries.length < 10 && countries.length > 1) {
-            const markup = countriesTpl(countries);
-            refs.country.innerHTML = markup;
+        if(countries.status === 404) {
+            refs.country.innerHTML = 'No matches found'
             return;
         }
-        refs.country.innerHTML = 'No matches found'
+        const markup = countriesTpl(countries);
+        refs.country.innerHTML = markup;
     })
-    .catch(console.log);
 }
 
 export default fetchCountries;
