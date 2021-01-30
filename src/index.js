@@ -10,6 +10,7 @@ import './sass/main.scss';
 refs.input.addEventListener('input', debounce(searchCountry,500));
 
 function searchCountry (event) {
+   refs.country.innerHTML = '';
    const value = event.target.value;
    if(value.length > 1){
       fetchCountries(value);

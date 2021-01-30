@@ -4,7 +4,6 @@ import countryTpl from '../tamplates/country.hbs';
 import error from './notify'
 
 function fetchCountries(searchQuery) {
-    refs.country.innerHTML = '';
     const url = `https://restcountries.eu/rest/v2/name/${searchQuery}`;
     fetch(url)
     .then(article => {
