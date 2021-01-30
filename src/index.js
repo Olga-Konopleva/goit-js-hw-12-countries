@@ -11,8 +11,9 @@ refs.input.addEventListener('input', debounce(searchCountry,500));
 
 function searchCountry (event) {
    const value = event.target.value;
-   fetchCountries(value);
-   
+   if(value.length > 1){
+      fetchCountries(value);
+   }
 }
 
 
